@@ -8,7 +8,6 @@ from fastapi.responses import JSONResponse
 
 # Constants
 BOT_TOKEN = "7842966942:AAGU7lC-xkCUiYsS1HpMKrz1t0DlMgAYXHQ"
-WEBHOOK_URL = "https://bot-1-f2wh.onrender.com/webhook"
 UPTIME_MONITOR_URL = "https://bot-1-f2wh.onrender.com/uptime"
 SUPPORT_CONTACT = "@BaddiesVIP_Support_Bot"
 ADMIN_CHAT_ID = 834523364  # Replace with the admin's chat ID
