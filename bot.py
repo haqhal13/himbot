@@ -154,14 +154,14 @@ async def handle_payment(update: Update, context: ContextTypes.DEFAULT_TYPE):
         message = (
             "🚀 **Instant Access with Apple Pay/Google Pay!**\n\n"
             "🎁 **Choose Your VIP Plan:**\n"
-            "💎 Lifetime Access: **£15.00 GBP** 🎉\n"
-            "⏳ 1 Month Access: **£9.00 GBP** 🌟\n\n"
+            "💎 Lifetime Access:  🎉\n"
+            "⏳ 1 Month Access:  🌟\n\n"
             "🛒 Click below to pay securely and get **INSTANT VIP access** delivered to your email! 📧\n\n"
             "✅ After payment, click 'I've Paid' to confirm."
         )
         keyboard = [
-            [InlineKeyboardButton("💎 Lifetime (£15.00)", web_app=WebAppInfo(url=PAYMENT_INFO["shopify"]["lifetime"]))],
-            [InlineKeyboardButton("⏳ 1 Month (£9.00)", web_app=WebAppInfo(url=PAYMENT_INFO["shopify"]["1_month"]))],
+            [InlineKeyboardButton("💎 Lifetime ", web_app=WebAppInfo(url=PAYMENT_INFO["shopify"]["lifetime"]))],
+            [InlineKeyboardButton("⏳ 1 Month ", web_app=WebAppInfo(url=PAYMENT_INFO["shopify"]["1_month"]))],
             [InlineKeyboardButton("✅ I've Paid", callback_data="paid")],
             [InlineKeyboardButton("🔙 Go Back", callback_data="back")]
         ]
